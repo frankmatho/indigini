@@ -5,6 +5,7 @@ const seeds = [
     swahili: "Terere",
     category: "Vegetable",
     description: "A leafy green rich in iron and commonly grown in Kenya.",
+    uses: "Used in traditional dishes and as a nutritious side.",
     region: "Western Kenya"
   },
   {
@@ -13,6 +14,7 @@ const seeds = [
     swahili: "Managu",
     category: "Vegetable",
     description: "Traditional vegetable with medicinal properties.",
+    uses: "Used in soups and stews, and for treating ailments.",
     region: "Central & Western Kenya"
   },
   {
@@ -21,6 +23,7 @@ const seeds = [
     swahili: "Kunde",
     category: "Vegetable",
     description: "Drought-resistant leafy vegetable.",
+    uses: "Used in salads, soups, and as a side dish.",
     region: "Eastern Kenya"
   }
 ];

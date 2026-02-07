@@ -2,11 +2,13 @@ import { useState } from 'react'
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import seeds from './data/seeds';
-
+import SeedModal from './components/SeedModal';
+import SeedList from './components/SeedPlantList';
 
 function App() {
   const [searchTerm, setSearchTerm] = useState("");
   const [category, setCategory] = useState("All");
+  const [selectedSeed, setSelectedSeed] = useState(null);
 
   const filteredSeeds = seeds.filter((seed) => {
     const matchesSearch =
@@ -28,7 +30,11 @@ function App() {
       setCategory={setCategory} 
       />
       <main className='p-6'>
-        <seedList seeds={filteredSeeds} />
+        <SeedList 
+        seeds={filteredSeeds}
+        onSelect ={setSelectedSeed}
+        />
+
         {filteredSeeds.length === 0 && (
           <div className="mt-10 text-center text-gray-500">
               <p className="text-lg">No seeds found 🌱</p>
@@ -38,7 +44,10 @@ function App() {
           </div>
         )}
       </main>
-      <Home />
+      <SeedModal 
+      seed={selectedSeed} 
+      onClose={() => setSelectedSeed(null)} 
+      />
     </>
   )
 }
