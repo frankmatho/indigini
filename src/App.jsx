@@ -1,9 +1,10 @@
 import { useState } from 'react'
 import Navbar from './components/Navbar';
-import Home from './components/Home';
+//import Home from './components/Home';
 import seeds from './data/seeds';
 import SeedModal from './components/SeedModal';
 import SeedList from './components/SeedPlantList';
+//import TreeList from './components/TreeList';
 
 function App() {
   const [searchTerm, setSearchTerm] = useState("");
