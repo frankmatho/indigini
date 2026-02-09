@@ -10,7 +10,7 @@ function SeedList({ seeds, onSelect }) {
         <SeedCard 
         key={seed.id} 
         seed={seed}
-        onSelect={onSelect} 
+        onSelect={onSelect}
         />
       ))}
     </div>
