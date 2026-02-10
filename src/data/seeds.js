@@ -6,7 +6,7 @@ const seeds = [
     category: "Vegetable",
     description: "A leafy green rich in iron and commonly grown in Kenya.",
     uses: "Used in traditional dishes and as a nutritious side.",
-    image: "../assets/terere.jpg",
+    image: "/images/terere.jpg",
     region: "Western Kenya"
   },
   {
@@ -16,7 +16,7 @@ const seeds = [
     category: "Vegetable",
     description: "Traditional vegetable with medicinal properties.",
     uses: "Used in soups and stews, and for treating ailments.",
-    image: "../assets/Managu.webp",
+    image: "/images/Managu.webp",
     region: "Central & Western Kenya"
   },
   {
@@ -26,7 +26,7 @@ const seeds = [
     category: "Vegetable",
     description: "Drought-resistant leafy vegetable.",
     uses: "Used in salads, soups, and as a side dish.",
-    image: "../assets/kunde.jpg",
+    image: "/images/kunde.jpg",
     region: "Eastern Kenya"
   }
 ];

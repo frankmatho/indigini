@@ -1,4 +1,4 @@
-function Navbar({ searchTerm, setSearchTerm, category, setCategory }) {
+function Navbar({ searchTerm, setSearchTerm, category, setCategory, region, setRegion, regions }) {
   return (
     <nav className="sticky top-0 bg-green-700 text-white px-6 py-4 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
       <h2 className="text-2xl font-bold">
@@ -24,6 +24,19 @@ function Navbar({ searchTerm, setSearchTerm, category, setCategory }) {
         <option value="Plant">Plant</option>
         <option value="Tree">Trees</option>
        </select>
+
+       <select
+         value={region}
+         onChange={(e) => setRegion(e.target.value)}
+            className="px-3 py-2 rounded-lg text-black"
+      >
+        {regions.map((r) => (
+        <option key={r} value={r}>
+        {r}
+        </option>
+      ))}
+        </select>
+ 
       </div>
     </nav>
   );

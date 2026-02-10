@@ -1,5 +1,5 @@
-function SeedModal({ seed, onClose }) {
-  if (!seed) return null;
+function TreeModal({ tree, onClose }) {
+  if (!tree) return null;
 
   return (
     <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50">
@@ -11,24 +11,24 @@ function SeedModal({ seed, onClose }) {
           ✕
         </button>
 
-        <img src={seed.image} alt={seed.name} className="w-full h-40 object-cover rounded-md mb-3" />
+        <img src={tree.image} alt={tree.name} className="w-full h-40 object-cover rounded-md mb-3" />
 
         <h2 className="text-2xl font-bold text-green-700">
-          {seed.name_en} ({seed.name_sw})
+          {tree.name_en} ({tree.name_sw})
         </h2>
 
         <p className="mt-2 text-gray-600">
-          {seed.description}
+          {tree.description}
         </p>
 
         <div className="mt-4 space-y-2 text-sm">
-          <p><strong>Category:</strong> {seed.category}</p>
-          <p><strong>Region:</strong> {seed.region}</p>
-          <p><strong>Uses:</strong> {seed.uses}</p>
+          <p><strong>Category:</strong> {tree.category}</p>
+          <p><strong>Region:</strong> {tree.region}</p>
+          <p><strong>Uses:</strong> {tree.uses}</p>
         </div>
       </div>
     </div>
   );
 }
 
-export default SeedModal;
+export default TreeModal;

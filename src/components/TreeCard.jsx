@@ -1,6 +1,7 @@
 function TreeCard({ tree, onSelect }) {
   return (
-    <div onClick={() => onSelect(tree)} className="bg-white p-4 rounded-xl shadow cursor-pointer hover:shadow-lg transition">
+    <div onClick={() => onSelect(tree)} className="bg-white p-4 rounded-xl shadow-sm cursor-pointer hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+      <img src={tree.image} alt={tree.name} className="w-full h-40 object-cover rounded-md mb-3" />
       <h3 className="text-xl font-semibold text-green-700">
         {tree.name} ({tree.swahili})
       </h3>

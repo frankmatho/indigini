@@ -6,6 +6,7 @@ const trees = [
     category: "hardwood tree",
     description: "An evergreen, drought-tolerant tree or shrub with grey-green leaves and small, bitter, edible fruits.",
     uses: "making rungus (clubs), making charcoal, and to build roofs.",
+    image:"/images/mzeituni.jpg",
     region: "laikipia plateau, taita hills, western Kenya"
   },
   {
@@ -15,6 +16,7 @@ const trees = [
     category: "hardwood tree",
     description: "A large, distinctive tree with a thick trunk and no branches.",
     uses: "Used to make snacks, medicine, used in making cosmetics and as shelter in ancient times.",
+    image:"/images/mbuyu.jpg",
     region: "Coastal Kenya, Eastern Region"
   },
   {
@@ -24,6 +26,7 @@ const trees = [
     category: "hardwood tree",
     description: "A large, tall tree with a straight trunk and broad leaves.",
     uses: "Used for timber, construction, boat building and making furniture.",
+    image:"/images/elgonteak.jpg",
     region: "Elgon Mountains, Western Kenya"
   }
 ];
